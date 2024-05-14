@@ -2,8 +2,6 @@
 
 一个使用 Cloudflare Pages 创建的 URL 缩短器
 
-*Demo* : [https://d.131213.xyz/](https://d.131213.xyz/)
-
 
 
 ### 利用Cloudflare pages部署
@@ -51,10 +49,10 @@ CREATE TABLE IF NOT EXISTS logs (
 
 ```bash
 # POST /create
-curl -X POST -H "Content-Type: application/json" -d '{"url":"https://131213.xyz"}' https://d.131213.xyz/create
+curl -X POST -H "Content-Type: application/json" -d '{"url":"target url..."}' https://example.com/create
 
 # 指定slug
-curl -X POST -H "Content-Type: application/json" -d '{"url":"https://131213.xyz","slug":"scxs"}' https://d.131213.xyz/create
+curl -X POST -H "Content-Type: application/json" -d '{"url":"target url...","slug":"scxs"}' https://example.com/create
 
 ```
 
@@ -65,7 +63,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"url":"https://131213.xyz"
 ```json
 {
   "slug": "<slug>",
-  "link": "http://d.131213.xyz/<slug>"
+  "link": "http://example.com/<slug>"
 }
 ```
 
