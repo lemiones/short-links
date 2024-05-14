@@ -211,7 +211,7 @@
         <summary>自定义设置</summary>
         <div>
           <input placeholder="slug" x-model="slug" />
-          <small>Slug 默认是随机生成的短 id。</small>
+          <small>不设置slug参数则随机生成短id。</small>
         </div>
       </details>
       <button :class="{ loading }" :disabled="loading || isValidated()" @click="submit($refs, $nextTick)">生成</button>
